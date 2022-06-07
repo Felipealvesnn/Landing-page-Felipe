@@ -295,6 +295,11 @@ body {
 }
 
 @media (max-width:825px) {
+
+    .projects {
+        
+        width: 100%;
+      }  
     .projectsson{
         display: block;
         flex-direction: column;
@@ -302,12 +307,8 @@ body {
     .projectscontainer.um h1{
         font-size: 5rem;
     }
-    .projects {
-        
-      width: 100%;
-    }  
   
-    
+  
     .projectscontainer.dois p {
         
         font-size: 1.5rem;
