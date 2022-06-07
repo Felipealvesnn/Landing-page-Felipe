@@ -15,7 +15,7 @@ html {
 
 body {
     display: grid;
-    grid-template-areas: "header""hero""about""services""projects""footer";
+    grid-template-areas: "header""about""services" "projects" "footer";
     grid-template-columns: 1fr;
     font-family: 'roboto', sans-serif;
     font-weight: 400;
@@ -34,6 +34,7 @@ body {
 }
 
 .hero {
+    grid-area: about;
     height: 89vh;
     background-image: linear-gradient(to bottom, #f4f4f4 0, #f4f4f4 50%, white 50%);
     display: grid;
@@ -120,8 +121,8 @@ body {
     }
 }
 
-.about {
-    grid-area: about;
+.services {
+    grid-area: services;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: linear-gradient(to bottom, white 0, white 50%, #f4f4f4 50%);
@@ -130,41 +131,41 @@ body {
     text-transform: uppercase;
     
 }
-.about img{
+.servicesson img{
     width: 500px;
     padding: 0 3px;
 }
-.aboutson h2 {
+.servicesson h2 {
     font-size: 3rem;
     padding-top: 30px;
     font-weight: 300;
     
 }
 
-.aboutson{
+.servicesson{
     display: flex;
     flex-direction: column;
     padding: 2px;
     align-self: center
     
 }
-.aboutson.um{
+.servicesson.um{
     
     margin-left: auto;
 
 }
-.aboutson.dois{
+.servicesson.dois{
     margin-right: auto;
    
     
 
 }
 
-.aboutson.dois h2{
+.servicesson.dois h2{
     padding-left: 10px;
 }
 
-.aboutson.dois h2 a {
+.servicesson.dois h2 a {
     text-decoration: none;
     font-size: 2rem;
     padding: 3px 22px;
@@ -178,48 +179,49 @@ body {
 
 }
 
-.aboutson a:hover {
+.servicesson a:hover {
     border: none;
 
 }
 
 @media (max-width:825px) {
-    .about {
+    .services {
         padding: 0;
         grid-template-columns: 1fr;
 
     }
-    .aboutson h2 {
+    .servicesson h2 {
         margin-bottom: 39px;
     }
-    .aboutson{
+    .servicesson{
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    .about img{
+    .services img{
         width: 200px;
     }
-    .aboutson.um{
+    .servicesson.um{
         padding: 0;
         margin-left: 0;
     
     }
-    .aboutson.dois{
+    .servicesson.dois{
         margin-right: 0;
         
     
     }
    
-    .aboutson.dois h2 a{
-        font-size: 1rem;
+    .servicesson.dois h2 a{
+        padding: 5px 20px;
+        font-size: 2rem;
     }
 
 }
 
-.services{
+.projects{
     display: grid;
-    grid-area: services;
+    grid-area: projects;
     height: 100vh;
     place-items: center;
     align-items: start;
@@ -227,7 +229,7 @@ body {
     
 }
 
-.serviceson{
+.projectsson{
     display: flex;
     text-align:center;
     justify-content: center;
@@ -236,7 +238,7 @@ body {
     
     
 }
-.servicescontainer.um,.servicescontainer.dois {
+.projectscontainer.um, .projectscontainer.dois {
     display: inline;
     height: 100%;
     width: 300px;
@@ -245,29 +247,32 @@ body {
     
     
 }
-.servicescontainer.um h1{
+.projectscontainer.um h1{
     font-size: 7rem;
     font-weight: 300;
 }
 
-.servicescontainer.dois p{
+.projectscontainer.dois p{
     padding-top: 60px;
     text-align: center;
     font-size: 1.7rem;
 
 }
+.projectsson.dois{
+    margin-top: 10px;
 
-.serviceson.dois .servicescontainer.tres h1{
+}
+.projectsson.dois .projectscontainer.tres h1{
     font-size: 3rem;
     font-weight: 300;
 }
-.servicescontainer.tres{
+.projectscontainer.tres{
     width: 500px;
    
 }
 
 
-.services::after{
+.projects::after{
     content: url('../image/seta_preta.png');
     position: absolute;
     height: 35px;
@@ -290,33 +295,33 @@ body {
 }
 
 @media (max-width:825px) {
-    .servicescontainer.um h1{
+    .projectsson{
+        display: block;
+        flex-direction: column;
+    }
+    .projectscontainer.um h1{
         font-size: 5rem;
     }
-    .serviceson {
+    .projects {
         
-        display: block;
+      width: 100%;
     }  
-    .servicescontainer.dois p {
+  
+    
+    .projectscontainer.dois p {
         
         font-size: 1.5rem;
     }
-    .servicescontainer.tres{
+    .projectscontainer.tres{
         width: 100%;
         padding: 0 10px;
        
     }
+    
 }
 
 
 
-
-.projects {
-    grid-area: projects;
-    height: 100vh;
-    background-color: #22142b;
-
-}
 
 .footer {
     grid-area: footer;
