@@ -24,7 +24,10 @@
 }
 
 .header nav ul li a:hover {
-  color: #ffa54d;
+  color: white;
+  
+  background-color: #ffa54d;
+  opacity: 3.5;
 }
 .header input {
   display: none;

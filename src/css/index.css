@@ -276,25 +276,6 @@ body {
     animation: setacaindo 0.6s infinite alternate ease-in-out;
 
 }
-@media (max-width:825px) {
-    .servicescontainer.um h1{
-        font-size: 5rem;
-    }
-    .serviceson {
-        
-        display: block;
-    }  
-    .servicescontainer.dois p {
-        fon
-        font-size: 1.5rem;
-    }
-    .servicescontainer.tres{
-        width: 100%;
-        padding: 0 10px;
-       
-    }
-}
-
 @-webkit-keyframes setacaindo {
     0% {
         -webkit-transform: translateY(0);
@@ -307,6 +288,27 @@ body {
     }
 
 }
+
+@media (max-width:825px) {
+    .servicescontainer.um h1{
+        font-size: 5rem;
+    }
+    .serviceson {
+        
+        display: block;
+    }  
+    .servicescontainer.dois p {
+        
+        font-size: 1.5rem;
+    }
+    .servicescontainer.tres{
+        width: 100%;
+        padding: 0 10px;
+       
+    }
+}
+
+
 
 
 .projects {
