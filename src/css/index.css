@@ -113,6 +113,11 @@ body {
         width: 200px;
 
     }
+    .hero .informacao{
+        display: grid;
+        padding: 0 1em;
+        padding-top: 1em;
+    }
     .hero .informacao .texto{
         display: inline;
         width: 100%;
