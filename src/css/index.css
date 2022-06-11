@@ -76,7 +76,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 500px;
     text-align: center;
 
 
@@ -90,7 +90,7 @@ body {
 }
 
 .hero .informacao .texto p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 10px;
     line-height: 1.6;
      font-family: 'Open Sans', sans-serif;
@@ -115,8 +115,10 @@ body {
     }
     .hero .informacao .texto{
         display: inline;
+        width: 100%;
     }
     .hero .informacao .texto p {
+        padding: 1rem 0;
         font-size: 1.9rem;
     }
 }
@@ -199,7 +201,7 @@ body {
         width: 100%;
     }
     .services img{
-        width: 200px;
+        width: 300px;
     }
     .servicesson.um{
         padding: 0;
@@ -264,7 +266,7 @@ body {
 
 }
 .projectsson.dois .projectscontainer.tres h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 .projectscontainer.tres{
@@ -305,16 +307,24 @@ body {
         display: block;
         flex-direction: column;
     }
-    .projectscontainer.um h1{
-        font-size: 5rem;
-    }
-  
+
     .projectsson.dois{
         margin-top: 7rem;
-    }
-    .projectscontainer.dois p {
         
-        font-size: 1.5rem;
+    }
+    .projectscontainer.um h1{
+        font-size: 6rem;
+    }
+   .projectscontainer.dois{
+    padding: 0 0.5rem;
+    width: 100%;
+    display: flex;
+   }
+    
+    .projectscontainer.dois p {
+        font-weight: 300;
+        font-size: 2.5rem;
+        text-align: center;
     }
     .projectscontainer.tres{
         width: 100%;
